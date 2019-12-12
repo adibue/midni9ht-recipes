@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Rambox and creates a package.</string>
 	<key>Identifier</key>
-	<string>ch.midni9ht.pkg.Rambox</string>
+	<string>ch.midni9ht.pkg.RamboxCE</string>
 	<key>Input</key>
 	<dict>
 		<key>BUNDLE_ID</key>
