@@ -3,11 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Comment</key>
-	<string>Created with Recipe Robot v1.1.2 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
 	<string>Downloads the latest version of ONLYOFFICE.</string>
 	<key>Identifier</key>
-	<string>ch.switch.reit.download.ONLYOFFICE</string>
+	<string>ch.midni9ht.download.ONLYOFFICE</string>
 	<key>Input</key>
 	<dict>
 		<key>GITHUB_REPO</key>
