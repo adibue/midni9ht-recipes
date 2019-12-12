@@ -10,10 +10,10 @@
 	<string>ch.switch.reit.download.ONLYOFFICE</string>
 	<key>Input</key>
 	<dict>
+		<key>GITHUB_REPO</key>
+		<string>ONLYOFFICE/DesktopEditors</string>
 		<key>NAME</key>
 		<string>ONLYOFFICE</string>
-		<key>SPARKLE_FEED_URL</key>
-		<string>http://download.onlyoffice.com/install/desktop/editors/mac/onlyoffice.xml</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
@@ -31,6 +31,17 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
+				<key>asset_regex</key>
+				<string>.*\.dmg$</string>
+				<key>github_repo</key>
+				<string>%GITHUB_REPO%</string>
+			</dict>
+			<key>Processor</key>
+			<string>GitHubReleasesInfoProvider</string>
+		</dict>
+			<dict>
+			<key>Arguments</key>
+			<dict>
 				<key>filename</key>
 				<string>%NAME%-%version%.dmg</string>
 			</dict>
@@ -44,13 +55,13 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>input_path</key>
-				<string>%pathname%/ONLYOFFICE.app</string>
-				<key>requirement</key>
-				<string>anchor apple generic and identifier "asc.onlyoffice.ONLYOFFICE" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2WH24U26GJ")</string>
+				<key>input_plist_path</key>
+				<string>%pathname%/ONLYOFFICE.app/Contents/Info.plist</string>
+				<key>plist_version_key</key>
+				<string>CFBundleShortVersionString</string>
 			</dict>
 			<key>Processor</key>
-			<string>CodeSignatureVerifier</string>
+			<string>Versioner</string>
 		</dict>
 	</array>
 </dict>
