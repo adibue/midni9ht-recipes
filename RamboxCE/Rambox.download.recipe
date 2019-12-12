@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Rambox.</string>
 	<key>Identifier</key>
-	<string>ch.switch.reit.download.Rambox</string>
+	<string>ch.midni9ht.download.Rambox</string>
 	<key>Input</key>
 	<dict>
 		<key>GITHUB_REPO</key>
