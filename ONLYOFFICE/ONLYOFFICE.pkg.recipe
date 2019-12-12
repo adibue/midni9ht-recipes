@@ -18,7 +18,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>ch.switch.reit.download.ONLYOFFICE</string>
+	<string>ch.midni9ht.download.ONLYOFFICE</string>
 	<key>Process</key>
 	<array>
 		<dict>
