@@ -11,22 +11,17 @@
 	<key>Input</key>
 	<dict>
 		<key>BUNDLE_ID</key>
-		<string>com.expandrive.ExpanDrive3</string>
+		<string>com.expandrive.ExpanDrive</string>
 		<key>NAME</key>
 		<string>ExpanDrive</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.bochoven.recipes.download.ExpanDrive</string>
+	<string>ch.midni9ht.download.ExpanDrive</string>
 	<key>Process</key>
 	<array>
 		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>app_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/ExpanDrive.app</string>
-			</dict>
 			<key>Processor</key>
 			<string>AppPkgCreator</string>
 		</dict>
