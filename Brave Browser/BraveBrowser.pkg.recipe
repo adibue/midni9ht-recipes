@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Brave and creates a package.</string>
 	<key>Identifier</key>
-	<string>ch.midni9ht.pkg.Brave</string>
+	<string>ch.midni9ht.pkg.BraveBrowser</string>
 	<key>Input</key>
 	<dict>
 		<key>APP_FILENAME</key>
@@ -20,7 +20,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>ch.midni9ht.download.Brave</string>
+	<string>ch.midni9ht.download.BraveBrowser</string>
 	<key>Process</key>
 	<array>
 		<dict>
