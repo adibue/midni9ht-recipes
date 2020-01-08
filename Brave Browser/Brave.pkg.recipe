@@ -15,7 +15,7 @@
 		<key>BUNDLE_ID</key>
 		<string>com.brave.Browser</string>
 		<key>NAME</key>
-		<string>Brave</string>
+		<string>Brave Browser</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
