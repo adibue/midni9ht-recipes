@@ -3,21 +3,20 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads Firefox disk image and builds a package, then uploads to the JSS.
-Credit to the original creators of the firefox.jss recipe, Homebysix and Novaksam</string>
+    <string>Downloads Brave Browser disk image and builds a package, then uploads to the JSS.</string>
     <key>Identifier</key>
-    <string>com.github.kylejericson.jss-upload.Firefox</string>
+    <string>ch.midni9ht.jss-upload.BraveBrowser</string>
     <key>Input</key>
     <dict>
         <key>CATEGORY</key>
-        <string>Applications</string>
+        <string>Browser</string>
         <key>NAME</key>
-        <string>Firefox</string>
+        <string>Brave Browser</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.4.0</string>
+    <string>1.0.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.autopkg.pkg.Firefox_EN</string>
+    <string>ch.midni9ht.pkg.BraveBrowser</string>
     <key>Process</key>
     <array>
         <dict>
