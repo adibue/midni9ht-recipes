@@ -11,7 +11,7 @@
         <key>CATEGORY</key>
         <string>Tools and Utilities</string>
         <key>NAME</key>
-        <string>ExpanDrive</string>
+        <string>KeePassXC</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.0.0</string>
