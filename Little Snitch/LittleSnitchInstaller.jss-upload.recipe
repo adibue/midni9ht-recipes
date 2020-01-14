@@ -5,18 +5,18 @@
     <key>Description</key>
     <string>Downloads Little Snitch and builds a package, then uploads to the JSS.</string>
     <key>Identifier</key>
-    <string>ch.midni9ht.jss-upload.LittleSnitch</string>
+    <string>ch.midni9ht.jss-upload.LittleSnitchInstaller</string>
     <key>Input</key>
     <dict>
         <key>CATEGORY</key>
         <string>Tools and Utilities</string>
         <key>NAME</key>
-        <string>LittleSnitch</string>
+        <string>LittleSnitchInstaller</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.smithjw.pkg.LittleSnitch</string>
+    <string>ch.midni9ht.pkg.LittleSnitchInstaller</string>
     <key>Process</key>
     <array>
         <dict>
