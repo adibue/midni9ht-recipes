@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads VMware Fusion 11 and builds a package, then uploads to the JSS.</string>
     <key>Identifier</key>
-    <string>ch.midni9ht.jss-upload.VMwareFusion11</string>
+    <string>ch.midni9ht.jss-upload.VMwareFusion</string>
     <key>Input</key>
     <dict>
         <key>CATEGORY</key>
