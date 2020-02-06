@@ -14,9 +14,9 @@
         <string>VMwareFusion11</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.5</string>
+    <string>1.0.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.dataJAR-recipes.pkg.VMware Fusion 11</string>
+    <string>ch.midni9ht.pkg.VMwareFusion</string>
     <key>Process</key>
     <array>
         <dict>
