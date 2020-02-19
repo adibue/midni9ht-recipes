@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comment</key>
+	<string>Created with Recipe Robot v1.2.1 (https://github.com/homebysix/recipe-robot)</string>
+	<key>Description</key>
+	<string>Downloads the latest version of pgAdmin 4.</string>
+	<key>Identifier</key>
+	<string>ch.midni9ht.download.pgAdmin4</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v4.11/macos/pgadmin4-4.11.dmg</string>
+		<key>NAME</key>
+		<string>pgAdmin 4</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.0</string>
+	<key>Process</key>
+	<array>
+			<dict>
+					<key>Processor</key>
+					<string>URLTextSearcher</string>
+					<key>Arguments</key>
+					<dict>
+							<key>url</key>
+							<string>https://www.pgadmin.org/download/pgadmin-4-macos/</string>
+							<key>re_pattern</key>
+							<string>href="(https://.*?/macos/)"&gt;pg</string>
+							<key>request_headers</key>
+							<dict>
+									<key>user-agent</key>
+									<string>%USER_AGENT%</string>
+							</dict>
+					</dict>
+			</dict>
+			<dict>
+					<key>Processor</key>
+					<string>URLTextSearcher</string>
+					<key>Arguments</key>
+					<dict>
+							<key>url</key>
+							<string>%match%</string>
+							<key>re_pattern</key>
+							<string>href="(https://.*?\.dmg)"&gt;&lt;</string>
+							<key>request_headers</key>
+							<dict>
+									<key>user-agent</key>
+									<string>%USER_AGENT%</string>
+							</dict>
+					</dict>
+			</dict>
+			<dict>
+					<key>Processor</key>
+					<string>URLDownloader</string>
+					<key>Arguments</key>
+					<dict>
+							<key>url</key>
+							<string>%match%</string>
+							<key>CHECK_FILESIZE_ONLY</key>
+							<true/>
+					</dict>
+			</dict>
+			<dict>
+					<key>Processor</key>
+					<string>EndOfCheckPhase</string>
+			</dict>
+			<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>input_path</key>
+				<string>%pathname%/pgAdmin 4.app</string>
+				<key>requirement</key>
+				<string>identifier "org.pgadmin.pgAdmin4" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "26QKX55P9K"</string>
+			</dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>input_plist_path</key>
+				<string>%pathname%/pgAdmin 4.app/Contents/Info.plist</string>
+				<key>plist_version_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+			<key>Processor</key>
+			<string>Versioner</string>
+		</dict>
+	</array>
+</dict>
+</plist>
