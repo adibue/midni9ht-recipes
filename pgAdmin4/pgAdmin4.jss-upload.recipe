@@ -16,7 +16,7 @@
     <key>MinimumVersion</key>
     <string>1.0.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.fishd72.pkg.pgAdmin4</string>
+    <string>ch.midni9ht.pkg.pgAdmin4</string>
     <key>Process</key>
     <array>
         <dict>
