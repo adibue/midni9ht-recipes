@@ -18,7 +18,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.dataJAR-recipes.download.pgadmin4</string>
+	<string>com.github.bnpl.autopkg.download.pgadmin4</string>
 	<key>Process</key>
 	<array>
 		<dict>
