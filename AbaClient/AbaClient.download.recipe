@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comment</key>
+	<string>Created with Recipe Robot v1.2.1 (https://github.com/homebysix/recipe-robot). Modified by midni9ht.</string>
+	<key>Description</key>
+	<string>Downloads the latest version of AbaClient.</string>
+	<key>Identifier</key>
+	<string>ch.midni9ht.download.AbaClient</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>AbaClient</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.0</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Processor</key>
+            <string>URLTextSearcher</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>https://classic.abacus.ch/downloads-page/abaclient/</string>
+                <key>re_pattern</key>
+                <string>https://storage\.googleapis\.com/images\.abasky\.net/*/[0-9\.]*/abaclient-*.dmg</string>
+                <key>comment</key>
+                <string>Example: https://storage.googleapis.com/images.abasky.net/119676df089a90ab3c3004398806433938052586dcd9a6bcacfb0e3e4024f339/2.1.600/abaclient-2.1.600.dmg</string>
+            </dict>
+		</dict>
+		<dict>
+		        <key>Processor</key>
+		        <string>URLDownloader</string>
+		        <key>Arguments</key>
+		        <dict>
+		            <key>url</key>
+		            <string>%match%</string>
+		            <key>filename</key>
+		            <string>%NAME%.dmg</string>
+		        </dict>
+		</dict>
+		<dict>
+		<key>Processor</key>
+		<string>EndOfCheckPhase</string>
+    </dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>input_path</key>
+				<string>%pathname%/AbaClient.app</string>
+				<key>requirement</key>
+				<string>identifier "ch.abacus.abaclient" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = PF8DXS9D53</string>
+			</dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>input_plist_path</key>
+				<string>%pathname%/AbaClient.app/Contents/Info.plist</string>
+				<key>plist_version_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+			<key>Processor</key>
+			<string>Versioner</string>
+		</dict>
+	</array>
+</dict>
+</plist>
