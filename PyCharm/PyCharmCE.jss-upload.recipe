@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads PyCharm and builds a package, then uploads to the JSS.</string>
+    <string>Downloads PyCharm CE and builds a package, then uploads to the JSS.</string>
     <key>Identifier</key>
-    <string>ch.midni9ht.jss-upload.PyCharm</string>
+    <string>ch.midni9ht.jss-upload.PyCharmCE</string>
     <key>Input</key>
     <dict>
         <key>CATEGORY</key>
@@ -14,7 +14,7 @@
         <string>PyCharm</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.9</string>
+    <string>1.0.0</string>
     <key>ParentRecipe</key>
     <string>com.github.hansen-m.pkg.pycharm</string>
     <key>Process</key>
