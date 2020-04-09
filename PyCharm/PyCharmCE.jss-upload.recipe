@@ -16,7 +16,7 @@
     <key>MinimumVersion</key>
     <string>1.0.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.hansen-m.pkg.pycharm</string>
+    <string>ch.midni9ht.pkg.PyCharmCE</string>
     <key>Process</key>
     <array>
         <dict>
