@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest version PyCharm, and makes a package of it.</string>
     <key>Identifier</key>
-    <string>com.github.midni9ht.pkg.pycharm</string>
+    <string>com.github.midni9ht.pkg.PyCharmCE</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
