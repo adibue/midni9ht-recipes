@@ -11,7 +11,7 @@
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOAD_URL</key>
-		<string>https://builds.balsamiq.com/bwd/Balsamiq%20Wireframes%204.0.29.dmg</string>
+		<string>https://builds.balsamiq.com/bwd/</string>
 		<key>NAME</key>
 		<string>Balsamiq Wireframes</string>
 	</dict>
