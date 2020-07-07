@@ -16,7 +16,7 @@
     <key>MinimumVersion</key>
     <string>1.0.0</string>
     <key>ParentRecipe</key>
-    <string>ch.midni9ht.download.DBeaverCE</string>
+    <string>com.github.peshay.download.DBeaverCE</string>
     <key>Process</key>
     <array>
         <dict>
