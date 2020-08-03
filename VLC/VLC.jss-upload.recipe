@@ -14,7 +14,7 @@
         <string>VLC</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.0</string>
+    <string>1.0.0</string>
     <key>ParentRecipe</key>
     <string>com.github.autopkg.pkg.VLC</string>
     <key>Process</key>
