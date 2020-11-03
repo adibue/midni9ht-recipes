@@ -5,18 +5,18 @@
     <key>Description</key>
     <string>Downloads Toggl Desktop and builds a package, then uploads to the JSS.</string>
     <key>Identifier</key>
-    <string>ch.midni9ht.jss-upload.TogglDesktop</string>
+    <string>ch.midni9ht.jss-upload.TogglTrack</string>
     <key>Input</key>
     <dict>
         <key>CATEGORY</key>
         <string>Tools and Utilities</string>
         <key>NAME</key>
-        <string>TogglDesktop</string>
+        <string>Toggl Track</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.0.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.homebysix.pkg.TogglDesktop</string>
+    <string>ch.midni9ht.pkg.TogglTrack</string>
     <key>Process</key>
     <array>
         <dict>
