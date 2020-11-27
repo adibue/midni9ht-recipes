@@ -16,7 +16,7 @@
     <key>MinimumVersion</key>
     <string>1.0.0</string>
     <key>ParentRecipe</key>
-    <string>ch.midni9ht.pkg.Freeplane</string>
+    <string>com.github.ahousseini-recipes.pkg.Freeplane</string>
     <key>Process</key>
     <array>
         <dict>
