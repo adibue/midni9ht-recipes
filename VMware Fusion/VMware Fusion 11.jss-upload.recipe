@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads VMware Fusion 11 and builds a package, then uploads to the JSS.</string>
+    <string>Downloads VMware Fusion 12 and builds a package, then uploads to the JSS.</string>
     <key>Identifier</key>
     <string>ch.midni9ht.jss-upload.VMwareFusion</string>
     <key>Input</key>
@@ -11,12 +11,12 @@
         <key>CATEGORY</key>
         <string>Tools and Utilities</string>
         <key>NAME</key>
-        <string>VMwareFusion11</string>
+        <string>VMwareFusion12</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.0.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.dataJAR-recipes.pkg.VMware Fusion 11</string>
+    <string>com.github.dataJAR-recipes.pkg.VMware Fusion 12</string>
     <key>Process</key>
     <array>
         <dict>
