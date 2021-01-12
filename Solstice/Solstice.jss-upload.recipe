@@ -16,7 +16,7 @@
     <key>MinimumVersion</key>
     <string>1.0.0</string>
     <key>ParentRecipe</key>
-    <string>cch.midni9ht.pkg.Solstice</string>
+    <string>ch.midni9ht.pkg.Solstice</string>
     <key>Process</key>
     <array>
         <dict>
